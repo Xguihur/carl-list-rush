@@ -4,6 +4,8 @@ package 链表.移除链表元素;
 //如果不添加 虚节点，那要另外处理 头节点为目标值 的情况
 //最后 return “干净的”链表头节点就好了
 
+import 链表.utils.ListNode;
+
 public class Main2 {
     public static void main(String[] args) {
         int[] data = {1, 2, 6, 3, 4, 5, 6};

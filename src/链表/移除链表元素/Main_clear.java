@@ -3,6 +3,8 @@ package 链表.移除链表元素;
 //添加了虚节点就直接用统一的方式去遍历所有的链表
 //注意最后 return 的时候要将真正的 头节点 return 出去，也就是 dummy.next
 
+import 链表.utils.ListNode;
+
 public class Main_clear {
     public static void main(String[] args) {
         int[] data = {1, 2, 6, 3, 4, 5, 6};

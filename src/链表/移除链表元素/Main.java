@@ -9,6 +9,8 @@ package 链表.移除链表元素;
 //    示例 3： 输入：head = [7,7,7,7], val = 7 输出：[]
 
 
+import 链表.utils.ListNode;
+
 public class Main {
     public static void main(String[] args) {
         int[] data = {1, 2, 6, 3, 4, 5, 6};

@@ -5,6 +5,8 @@ package 链表.移除链表元素;
 //如果不添加 pre node，那就要一个变量控制 链表的增删 和 链表的查询
 //最后 return “干净的”链表头节点就好了
 
+import 链表.utils.ListNode;
+
 public class Main3 {
     public static void main(String[] args) {
         int[] data = {1, 2, 6, 3, 4, 5, 6};
