@@ -17,9 +17,9 @@ package 链表.设计链表;
 
 
 import 链表.utils.ListNode;
-import 链表.utils.parent;
+import 链表.utils.ListParent;
 
-public class MyLinkedList1 extends parent {
+public class MyLinkedList1 extends ListParent {
     int size;
     ListNode dummy;//头节点是一个虚节点
     ListNode head;

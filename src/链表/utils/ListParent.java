@@ -1,6 +1,6 @@
 package 链表.utils;
 
-public class parent {
+public class ListParent {
 
     //    创建一个链表的方法
     protected static ListNode createLinkedList(int[] arr) {//将输入的数组输入到链表中

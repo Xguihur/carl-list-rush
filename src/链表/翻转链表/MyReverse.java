@@ -4,7 +4,7 @@ package 链表.翻转链表;
 //    示例: 输入: 1->2->3->4->5->NULL 输出: 5->4->3->2->1->NULL
 
 import 链表.utils.ListNode;
-import 链表.utils.parent;
+import 链表.utils.ListParent;
 
 //有两种方法：第一种是从前往后翻转，第二种是从后往前翻转，都是在同一个链表上操作的
 //第一种方法有两种方式，循环或者递归。当然循环和递归可以互相转化
@@ -13,7 +13,7 @@ import 链表.utils.parent;
 //从前往后的算法是：用两个指针，一个是 pre ，一个是 cur，用一个临时变量存放 cur.next ，然后将cur的下一个指针指向pre，之后两者继续后移
 //退出循环的条件是：cur==null，表示cur已经指向尾节点的 next了，pre则指向尾节点，这时return pre 即可
 
-public class MyReverse extends parent {
+public class MyReverse extends ListParent {
     //    这是循环的方法
     public ListNode reverseList(ListNode head) {
 

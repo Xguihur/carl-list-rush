@@ -1,9 +1,9 @@
 package 链表.翻转链表;
 
 import 链表.utils.ListNode;
-import 链表.utils.parent;
+import 链表.utils.ListParent;
 
-public class Reverse extends parent {
+public class Reverse extends ListParent {
     public static void main(String[] args) {
         int[] list = {1, 2, 3, 4, 5};
         ListNode head = createLinkedList(list);
