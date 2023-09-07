@@ -20,7 +20,8 @@
     <script>
       window.$docsify = {
         name: 'Guihur 的算法日志',
-        repo: '',
+        repo: 'https://github.com/Xguihur/carl-list-rush/tree/javascript/Interviewed/',
+        editLink: true,
         mergeNavbar: true, //小屏合并导航栏
         externalLinkTarget: '_blank', // default: '_blank'
         // themeColor: 'pink',
@@ -48,19 +49,26 @@
           color: 'rgb(90,90,90)',
           language: 'chinese',
         }, //字数统计
-        // plugins: [
-        //   EditOnGithubPlugin.create(
-        //     'https://github.com/Xguihur/carl-list-rush/tree/javascript/Interviewed/'
-        //   ),
-        // ],
+        plugins: [
+          //  在github上编辑
+          function (hook, vm) {
+            hook.beforeEach(function (content) {
+              var currentPath = vm.route.file
+              var editLink =
+                'https://github.com/Xguihur/carl-list-rush/tree/javascript/Interviewed/' +
+                currentPath
+              var editContent = `[📝 在 GitHub 编辑](${editLink})`
+
+              return editContent + '<hr/>' + content
+            })
+          },
+        ],
       }
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
     <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-    <!-- 在github上编辑 -->
-    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script> -->
 
     <!-- 集成 gitalk  -->
     <!-- <link
