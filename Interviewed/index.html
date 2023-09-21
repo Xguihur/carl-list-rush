@@ -3,7 +3,7 @@
   <!-- 1.github 的评论会报错、2.在github上编辑还是存在问题，使用插件就报错 -->
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>Guihur 算法文档</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description" />
     <meta
@@ -14,13 +14,25 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
     />
+    <style>
+      .mask {
+        width: 0 !important;
+      }
+      .app-nav li > p {
+        /* color: #d40a0a; */
+        background-color: #eee;
+        border-radius: 30px;
+        padding: 5px 8px;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
     <script>
       window.$docsify = {
         name: 'Guihur 的算法日志',
-        repo: '',
+        repo: 'https://github.com/Xguihur/carl-list-rush/tree/javascript/Interviewed/',
+        editLink: true,
         mergeNavbar: true, //小屏合并导航栏
         externalLinkTarget: '_blank', // default: '_blank'
         // themeColor: 'pink',
@@ -48,22 +60,29 @@
           color: 'rgb(90,90,90)',
           language: 'chinese',
         }, //字数统计
-        // plugins: [
-        //   EditOnGithubPlugin.create(
-        //     'https://github.com/Xguihur/carl-list-rush/tree/javascript/Interviewed/'
-        //   ),
-        // ],
+        plugins: [
+          //  在github上编辑
+          function (hook, vm) {
+            hook.beforeEach(function (content) {
+              var currentPath = vm.route.file
+              var editLink =
+                'https://github.com/Xguihur/carl-list-rush/tree/javascript/Interviewed/' +
+                currentPath
+              var editContent = `[📝 在 GitHub 编辑](${editLink})`
+
+              return editContent + '<hr/>' + content
+            })
+          },
+        ],
       }
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
     <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-    <!-- 在github上编辑 -->
-    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script> -->
 
     <!-- 集成 gitalk  -->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css"
     />
@@ -73,12 +92,15 @@
       const gitalk = new Gitalk({
         clientID: 'a77b4c094e64efaf3fda',
         clientSecret: '80dc44588565489825b94236d7ebdf5da437bdc4',
-        repo: 'https://github.com/Xguihur/carl-list-rush.git',
+        // 服务端
+        // clientID: '9857a62419dcb24cefae',
+        // clientSecret: '7c837383800f233bc4151d20adc87a6585f8a479',
+        repo: 'carl-list-rush',
         owner: 'Xguihur',
         admin: ['Xguihur'],
         // facebook-like distraction free mode
         distractionFreeMode: false,
       })
-    </script> -->
+    </script>
   </body>
 </html>
