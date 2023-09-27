@@ -6,14 +6,8 @@
     <title>Guihur 算法文档</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
     <style>
       .mask {
         width: 0 !important;
@@ -45,35 +39,33 @@
         copyCode: {
           // 复制相关配置
           buttonText: {
-            '/': '点击复制',
+            '/': '点击复制'
           },
           errorText: {
-            '/': '错误',
+            '/': '错误'
           },
           successText: {
-            '/': '复制',
-          },
+            '/': '复制'
+          }
         },
         count: {
           countable: true,
           fontsize: '0.9em',
           color: 'rgb(90,90,90)',
-          language: 'chinese',
+          language: 'chinese'
         }, //字数统计
         plugins: [
           //  在github上编辑
           function (hook, vm) {
             hook.beforeEach(function (content) {
               var currentPath = vm.route.file
-              var editLink =
-                'https://github.com/Xguihur/carl-list-rush/tree/javascript/Interviewed/' +
-                currentPath
+              var editLink = 'https://github.com/Xguihur/carl-list-rush/tree/javascript/Interviewed/' + currentPath
               var editContent = `[📝 在 GitHub 编辑](${editLink})`
 
               return editContent + '<hr/>' + content
             })
-          },
-        ],
+          }
+        ]
       }
     </script>
     <!-- Docsify v4 -->
@@ -82,24 +74,21 @@
     <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 
     <!-- 集成 gitalk  -->
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css"
-    />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css" />
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
     <script>
       const gitalk = new Gitalk({
-        clientID: 'a77b4c094e64efaf3fda',
-        clientSecret: '80dc44588565489825b94236d7ebdf5da437bdc4',
+        // clientID: 'a77b4c094e64efaf3fda',
+        // clientSecret: '80dc44588565489825b94236d7ebdf5da437bdc4',
         // 服务端
-        // clientID: '9857a62419dcb24cefae',
-        // clientSecret: '7c837383800f233bc4151d20adc87a6585f8a479',
+        clientID: '9857a62419dcb24cefae',
+        clientSecret: '7c837383800f233bc4151d20adc87a6585f8a479',
         repo: 'carl-list-rush',
         owner: 'Xguihur',
         admin: ['Xguihur'],
         // facebook-like distraction free mode
-        distractionFreeMode: false,
+        distractionFreeMode: false
       })
     </script>
   </body>
