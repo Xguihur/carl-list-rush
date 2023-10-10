@@ -1,3 +1,5 @@
+
+
 ## 有效的字母异位词
 
 ### [LeetCode 题目：](https://leetcode.cn/problems/valid-anagram/)
@@ -122,11 +124,11 @@ intersection(nums1,nums2)
 
 5. 相关链接索引 -- 学习 set 与 map，了解 **实例属性** 以及 **实例方法**
 
-   * [Set]([Set - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set))
+   * [Set](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
    ![image-20231009164835013](TP-images/image-20231009164835013.png )
 
-   * [Map]([Map - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map))
+   * [Map](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
    ![image-20231009165022741](TP-images/image-20231009165022741.png)
 

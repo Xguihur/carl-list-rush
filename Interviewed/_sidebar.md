@@ -9,5 +9,7 @@
   - [栈与队列](/Carl/stack.md)
   - [二叉树](/Carl/tree.md)
 - [**LeetCode**](/LeetCode.md)
+- [**笔试总结**](/Test/README.md)
+  - [秋季招聘](/Test/recruitment.md)
 - [**漩涡**](/Other/README.md)
   - [心灵守护者](/Other/motto.md)
