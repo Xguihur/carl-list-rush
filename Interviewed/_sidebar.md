@@ -8,6 +8,12 @@
   - [字符串](/Carl/string.md)
   - [栈与队列](/Carl/stack.md)
   - [二叉树](/Carl/tree.md)
+  - **动态规划**
+    - [基础题目](/Carl/dp1.md)
+    - [背包问题](/Carl/dp2.md)
+    - [打家劫舍](/Carl/dp3.md)
+    - [股票问题](/Carl/dp4.md)
+    - [子序列问题](/Carl/dp5.md)
 - [**LeetCode**](/LeetCode.md)
 - [**笔试总结**](/Test/README.md)
   - [秋季招聘](/Test/recruitment.md)
