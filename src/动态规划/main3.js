@@ -13,7 +13,7 @@ var integerBreak = function (n) {
   // j<i-1,因为j=i-1 的情况得到的 i-j 就是 1，这种情况不用算也行，那这样算的话 j<i/2 就好了，后面都开始重复了呢
   for (let i = 3; i <= n; i++) {
     for (let j = 1; j < i - 1; j++) {
-      dp[i] = max(j * (i - j), dp[i - j] * j)
+      dp[i] = max(dp[i], max(j * (i - j), dp[i - j] * j))
     }
   }
   return dp[n]

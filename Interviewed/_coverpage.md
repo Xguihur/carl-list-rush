@@ -12,6 +12,6 @@
 
 > > > > > [LeetCode Top100](https://leetcode.cn/studyplan/top-100-liked/)
 
-[开始使用 Let Go](/README.md)
+[开始使用 Let Go](/Carl/README.md)
 
 ![](/images/bg1.jpeg)
