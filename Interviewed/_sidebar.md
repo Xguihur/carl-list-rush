@@ -6,6 +6,7 @@
   - [链表](/Carl/chain.md)
   - [哈希表](/Carl/hash.md)
   - [字符串](/Carl/string.md)
+  - [排序](/Carl/sort.md)
   - [栈与队列](/Carl/stack.md)
   - [二叉树](/Carl/tree.md)
   - **动态规划**
